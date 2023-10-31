@@ -16,82 +16,100 @@
 
 # System Design 101
 
-Explain complex systems using visuals and simple terms. 
 
-Whether you're preparing for a System Design Interview or you simply want to understand how systems work beneath the surface, we hope this repository will help you achieve that.
+用图像和简单术语解释复杂系统。
 
-# Table of Contents
+无论您是为系统设计面试做准备，还是想了解系统在表面下的工作方式，我们希望这个仓库能帮助您实现这一目标。
+
+
+目录
 
 <!-- TOC toc.levels=2 -->
-
-- [Communication protocols](#sub-communication-protocols.md)
-- [CI/CD](#cicd)
-  - [CI/CD Pipeline Explained in Simple Terms](#cicd-pipeline-explained-in-simple-terms)
-  - [Netflix Tech Stack (CI/CD Pipeline)](#netflix-tech-stack-cicd-pipeline)
-- [Architecture patterns](#architecture-patterns)
-  - [MVC, MVP, MVVM, MVVM-C, and VIPER](#mvc-mvp-mvvm-mvvm-c-and-viper)
-  - [18 Key Design Patterns Every Developer Should Know](#18-key-design-patterns-every-developer-should-know)
-- [Database](#database)
-  - [A nice cheat sheet of different databases in cloud services](#a-nice-cheat-sheet-of-different-databases-in-cloud-services)
-  - [8 Data Structures That Power Your Databases](#8-data-structures-that-power-your-databases)
-  - [How is an SQL statement executed in the database?](#how-is-an-sql-statement-executed-in-the-database)
-  - [CAP theorem](#cap-theorem)
-  - [Types of Memory and Storage](#types-of-memory-and-storage)
-  - [Visualizing a SQL query](#visualizing-a-sql-query)
-  - [SQL language](#sql-language)
-- [Cache](#cache)
-  - [Data is cached everywhere](#data-is-cached-everywhere)
-  - [Why is Redis so fast?](#why-is-redis-so-fast)
-  - [How can Redis be used?](#how-can-redis-be-used)
-  - [Top caching strategies](#top-caching-strategies)
-- [Microservice architecture](#microservice-architecture)
-  - [What does a typical microservice architecture look like?](#what-does-a-typical-microservice-architecture-look-like)
-  - [Microservice Best Practices](#microservice-best-practices)
-  - [What tech stack is commonly used for microservices?](#what-tech-stack-is-commonly-used-for-microservices)
-  - [Why is Kafka fast](#why-is-kafka-fast)
-- [Payment systems](#payment-systems)
-  - [How to learn payment systems?](#how-to-learn-payment-systems)
-  - [Why is the credit card called “the most profitable product in banks”? How does VISA/Mastercard make money?](#why-is-the-credit-card-called-the-most-profitable-product-in-banks-how-does-visamastercard-make-money)
-  - [How does VISA work when we swipe a credit card at a merchant’s shop?](#how-does-visa-work-when-we-swipe-a-credit-card-at-a-merchants-shop)
-  - [Payment Systems Around The World Series (Part 1): Unified Payments Interface (UPI) in India](#payment-systems-around-the-world-series-part-1-unified-payments-interface-upi-in-india)
-- [DevOps](#devops)
-  - [DevOps vs. SRE vs. Platform Engineering. What is the difference?](#devops-vs-sre-vs-platform-engineering-what-is-the-difference)
-  - [What is k8s (Kubernetes)?](#what-is-k8s-kubernetes)
-  - [Docker vs. Kubernetes. Which one should we use?](#docker-vs-kubernetes-which-one-should-we-use)
-  - [How does Docker work?](#how-does-docker-work)
-- [GIT](#git)
-  - [How Git Commands work](#how-git-commands-work)
-  - [How does Git Work?](#how-does-git-work)
-  - [Git merge vs. Git rebase](#git-merge-vs-git-rebase)
-- [Cloud Services](#cloud-services)
-  - [A nice cheat sheet of different cloud services (2023 edition)](#a-nice-cheat-sheet-of-different-cloud-services-2023-edition)
-  - [What is cloud native?](#what-is-cloud-native)
-- [Developer productivity tools](#developer-productivity-tools)
-  - [Visualize JSON files](#visualize-json-files)
-  - [Automatically turn code into architecture diagrams](#automatically-turn-code-into-architecture-diagrams)
-- [Linux](#linux)
-  - [Linux file system explained](#linux-file-system-explained)
-  - [18 Most-used Linux Commands You Should Know](#18-most-used-linux-commands-you-should-know)
-- [Security](#security)
-  - [How does HTTPS work?](#how-does-https-work)
-  - [Oauth 2.0 Explained With Simple Terms.](#oauth-20-explained-with-simple-terms)
-  - [Top 4 Forms of Authentication Mechanisms](#top-4-forms-of-authentication-mechanisms)
-  - [Session, cookie, JWT, token, SSO, and OAuth 2.0 - what are they?](#session-cookie-jwt-token-sso-and-oauth-20---what-are-they)
-  - [How to store passwords safely in the database and how to validate a password?](#how-to-store-passwords-safely-in-the-database-and-how-to-validate-a-password)
-  - [Explaining JSON Web Token (JWT) to a 10 year old Kid](#explaining-json-web-token-jwt-to-a-10-year-old-kid)
-  - [How does Google Authenticator (or other types of 2-factor authenticators) work?](#how-does-google-authenticator-or-other-types-of-2-factor-authenticators-work)
-- [Real World Case Studies](#real-world-case-studies)
-  - [Netflix's Tech Stack](#netflixs-tech-stack)
-  - [Twitter Architecture 2022](#twitter-architecture-2022)
-  - [Evolution of Airbnb’s microservice architecture over the past 15 years](#evolution-of-airbnbs-microservice-architecture-over-the-past-15-years)
-  - [Monorepo vs. Microrepo.](#monorepo-vs-microrepo)
-  - [How will you design the Stack Overflow website?](#how-will-you-design-the-stack-overflow-website)
-  - [Why did Amazon Prime Video monitoring move from serverless to monolithic? How can it save 90% cost?](#why-did-amazon-prime-video-monitoring-move-from-serverless-to-monolithic-how-can-it-save-90-cost)
-  - [How does Disney Hotstar capture 5 Billion Emojis during a tournament?](#how-does-disney-hotstar-capture-5-billion-emojis-during-a-tournament)
-  - [How Discord Stores Trillions Of Messages](#how-discord-stores-trillions-of-messages)
-  - [How do video live streamings work on YouTube, TikTok live, or Twitch?](#how-do-video-live-streamings-work-on-youtube-tiktok-live-or-twitch)
-
+- 通信协议
+  - [REST API vs. GraphQL](#rest-api-vs-graphql)
+  - [gRPC 是如何工作的？](#how-does-grpc-work)
+  - [什么是 Webhook？](#what-is-a-webhook)
+  - [如何提高 API 性能？](#how-to-improve-api-performance)
+  - [HTTP 1.0 -> HTTP 1.1 -> HTTP 2.0 -> HTTP 3.0 (QUIC)](#http-10---http-11---http-20---http-30-quic)
+  - [SOAP vs REST vs GraphQL vs RPC](#soap-vs-rest-vs-graphql-vs-rpc)
+  - [代码优先 vs. API 优先](#code-first-vs-api-first)
+  - [HTTP 状态码](#http-status-codes)
+  - [API 网关是什么？](#what-does-api-gateway-do)
+  - [如何设计有效和安全的 API？](#how-do-we-design-effective-and-safe-apis)
+  - [TCP/IP 封装](#tcpip-encapsulation)
+  - [为什么 Nginx 被称为“反向”代理？](#why-is-nginx-called-a-reverse-proxy)
+  - [常见的负载均衡算法有哪些？](#what-are-the-common-load-balancing-algorithms)
+  - [URL、URI、URN - 你知道它们的区别吗？](#url-uri-urn---do-you-know-the-differences)
+- CI/CD
+  - [简单解释 CI/CD 流水线](#cicd-pipeline-explained-in-simple-terms)
+  - [Netflix 技术栈 (CI/CD 流水线)](#netflix-tech-stack-cicd-pipeline)
+- 架构模式
+  - [MVC、MVP、MVVM、MVVM-C 和 VIPER](#mvc-mvp-mvvm-mvvm-c-and-viper)
+  - [18 种开发人员应该知道的关键设计模式](#18-key-design-patterns-every-developer-should-know)
+- 数据库
+  - [云服务中不同数据库的简易速查表](#a-nice-cheat-sheet-of-different-databases-in-cloud-services)
+  - [支持数据库的 8 种数据结构](#8-data-structures-that-power-your-databases)
+  - [SQL 语句在数据库中是如何执行的？](#how-is-an-sql-statement-executed-in-the-database)
+  - [CAP 定理](#cap-theorem)
+  - [内存和存储的类型](#types-of-memory-and-storage)
+  - [可视化 SQL 查询](#visualizing-a-sql-query)
+  - [SQL 语言](#sql-language)
+- 缓存
+  - [数据随处可缓存](#data-is-cached-everywhere)
+  - [Redis 为什么这么快？](#why-is-redis-so-fast)
+  - [如何使用 Redis？](#how-can-redis-be-used)
+  - [常用的缓存策略](#top-caching-strategies)
+- 微服务架构
+  - [典型的微服务架构是什么样子的？](#what-does-a-typical-microservice-architecture-look-like)
+  - [微服务最佳实践](#microservice-best-practices)
+  - [微服务常用的技术栈是什么？](#what-tech-stack-is-commonly-used-for-microservices)
+  - [为什么 Kafka 这么快？](#why-is-kafka-fast)
+- 支付系统
+  - [如何学习支付系统？](#how-to-learn-payment-systems)
+  - [为什么信用卡被称为“银行最赚钱的产品”？VISA/Mastercard 是如何赚钱的？](#why-is-the-credit-card-called-the-most-profitable-product-in-banks-how-does-visamastercard-make-money)
+  - [当我们在商家店里刷信用卡时，VISA 是如何工作的？](#how-does-visa-work-when-we-swipe-a-credit-card-at-a-merchants-shop)
+  - [全球支付系统系列 (第一部分)：印度的统一支付接口 (UPI)](#payment-systems-around-the-world-series-part-1-unified-payments-interface-upi-in-india)
+- DevOps
+  - [DevOps vs. SRE vs. 平台工程师。它们的区别是什么？](#devops-vs-sre-vs-platform-engineering-what-is-the-difference)
+  - [什么是 k8s (Kubernetes)？](#what-is-k8s-kubernetes)
+  - [Docker 和 Kubernetes 的区别。我们应该使用哪一个？](#docker-vs-kubernetes-which-one-should-we-use)
+  - [Docker 是如何工作的？](#how-does-docker-work)
+- GIT
+  - [Git 命令是如何工作的？](#how-git-commands-work)
+  - [Git 是如何工作的？](#how-does-git-work)
+  - [Git 合并 vs. Git rebase](#git-merge-vs-git-rebase)
+- 云服务
+  - [不同云服务的简易速查表 (2023 版)](#a-nice-cheat-sheet-of-different-cloud-services-2023-edition)
+  - [什么是云原生？](#what-is-cloud-native)
+- 开发人员生产力工具
+  - [可视化 JSON 文件](#visualize-json-files)
+  - [自动将代码转换为架构图](#automatically-turn-code-into-architecture-diagrams)
+- Linux
+  - [Linux 文件系统介绍](#linux-file-system-explained)
+  - [18 个最常用的 Linux 命令](#18-most-used-linux-commands-you-should-know)
+- 安全
+  - [HTTPS 是如何工作的？](#how-does-https-work)
+  - [用简单的术语解释 OAuth 2.0](#oauth-20-explained-with-simple-terms)
+  - [顶级身份验证机制有哪些？](#top-4-forms-of-authentication-mechanisms)
+  - [Session、cookie、JWT、令牌、SSO 和 OAuth 2.0 - 它们是什么？](#session-cookie-jwt-token-sso-and-oauth-20---what-are-they)
+  - [如何在数据库中安全存储密码并验证密码？](#how-to-store-passwords-safely-in-the-database-and-how-to-validate-a-password)
+  - [向 10 岁孩子解释 JSON Web Token (JWT)](#explaining-json-web-token-jwt-to-a-10-year-old-kid)
+  - [Google Authenticator (或其他类型的双因素认证器) 是如何工作的？](#how-does-google-authenticator-or-other-types-of-2-factor-authenticators-work)
+- 真实案例
+  - [Netflix 的技术栈](#netflixs-tech-stack)
+  - [Twitter 的架构 (2022)](#twitter-architecture-2022)
+  - [Airbnb 过去 15 年的微服务架构演变](#evolution-of-airbnbs-microservice-architecture-over-the-past-15-years)
+  - [单体库 vs. 微库](#monorepo-vs-microrepo)
+  - [你将如何设计 Stack Overflow 网站？](#how-will-you-design-the-stack-overflow-website)
+  - [Amazon Prime Video 监控为什么从无服务器转向单体应用？如何节省 90% 的成本？](#why-did-amazon-prime-video-monitoring-move-from-serverless-to-monolithic-how-can-it-save-90-cost)
+  - [迪士尼热星是如何在比赛期间捕获 50 亿个表情符号的？](#how-does-disney-hotstar-capture-5-billion-emojis-during-a-tournament)
+  - [Discord 如何存储数万亿条消息](#how-discord-stores-trillions-of-messages)
+  - [YouTube、TikTok 直播或 Twitch 直播是如何工作的？](#how-do-video-live-streamings-work-on-youtube-tiktok-live)
 <!-- /TOC -->
+
+
+
+
 
 
 ## CI/CD
@@ -1342,3 +1360,4 @@ Standard protocols for live streaming include:
 ## License
 
 <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+![](![]())
