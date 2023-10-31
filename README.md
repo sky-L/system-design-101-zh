@@ -24,7 +24,7 @@ Whether you're preparing for a System Design Interview or you simply want to und
 
 <!-- TOC toc.levels=2 -->
 
-- [Communication protocols](#sub-communication-protocols.md)
+- [Communication protocols](sub-communication-protocols.md)
 - [CI/CD](#cicd)
   - [CI/CD Pipeline Explained in Simple Terms](#cicd-pipeline-explained-in-simple-terms)
   - [Netflix Tech Stack (CI/CD Pipeline)](#netflix-tech-stack-cicd-pipeline)
