@@ -34,7 +34,7 @@ A typical CI/CD pipeline has several connected stages:
 - Further testing may be done on staging before release
 - CD system deploys approved changes to production
 
-### Netflix技术栈（CI/CD流程）{#Netflix技术栈(CI/CD流程)}
+### Netflix技术栈(CI/CD流程)
 
 <p>
   <img src="images/netflix-ci-cd.jpg" style="width: 720px" />
