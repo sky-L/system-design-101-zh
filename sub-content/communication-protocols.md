@@ -7,7 +7,7 @@
     - [SOAP vs REST vs GraphQL vs RPC](#soap-vs-rest-vs-graphql-vs-rpc)
     - [代码优先 vs. API 优先](#code-first-vs-api-first)
     - [HTTP 状态码](#http-status-codes)
-    - [API 网关是什么？](#API 网关是什么)
+    - [API 网关是什么？](#API-网关是什么)
     - [如何设计有效和安全的 API？](#how-do-we-design-effective-and-safe-apis)
     - [TCP/IP 封装](#tcpip-encapsulation)
     - [为什么 Nginx 被称为“反向”代理？](#why-is-nginx-called-a-reverse-proxy)
