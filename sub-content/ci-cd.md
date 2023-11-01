@@ -1,11 +1,11 @@
  
 - [CI/CD](#CI/CD)
     - [简单介绍CI/CD流程](#简单介绍CI-CD流程)
-    - [Netflix技术栈（CI/CD流程）](#Netflix技术栈(CI-CD流程))
+    - [Netflix技术栈（CI/CD流程）](#Netflix技术栈)
 
 ## CI/CD
 
-### 简单介绍CI/CD流程
+### 简单介绍CI CD流程
 
 <p>
   <img src="images/ci-cd-pipeline.jpg" style="width: 680px" />
@@ -34,7 +34,7 @@ A typical CI/CD pipeline has several connected stages:
 - Further testing may be done on staging before release
 - CD system deploys approved changes to production
 
-### Netflix技术栈(CI-CD流程)
+### Netflix技术栈
 
 <p>
   <img src="images/netflix-ci-cd.jpg" style="width: 720px" />
