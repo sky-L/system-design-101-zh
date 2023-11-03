@@ -1,7 +1,3 @@
- 
-- [CI/CD](#CI/CD)
-    - [简单介绍CI/CD流程](#简单介绍CI-CD流程)
-    - [Netflix技术栈（CI/CD流程）](#Netflix技术栈)
 
 ## CI/CD
 

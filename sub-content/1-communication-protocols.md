@@ -1,18 +1,3 @@
-- [通信协议](#communication-protocols)
-    - [REST API vs. GraphQL](#rest-api-vs-graphql)
-    - [gRPC 是如何工作的？](#how-does-grpc-work)
-    - [什么是 Webhook？](#what-is-a-webhook)
-    - [如何提高 API 性能？](#how-to-improve-api-performance)
-    - [HTTP 1.0 -> HTTP 1.1 -> HTTP 2.0 -> HTTP 3.0 (QUIC)](#http-10---http-11---http-20---http-30-quic)
-    - [SOAP vs REST vs GraphQL vs RPC](#soap-vs-rest-vs-graphql-vs-rpc)
-    - [代码优先 vs. API 优先](#code-first-vs-api-first)
-    - [HTTP 状态码](#http-status-codes)
-    - [API 网关是什么？](#API-网关是什么)
-    - [如何设计有效和安全的 API？](#how-do-we-design-effective-and-safe-apis)
-    - [TCP/IP 封装](#tcpip-encapsulation)
-    - [为什么 Nginx 被称为“反向”代理？](#why-is-nginx-called-a-reverse-proxy)
-    - [常见的负载均衡算法有哪些？](#what-are-the-common-load-balancing-algorithms)
-    - [URL、URI、URN - 你知道它们的区别吗？](#url-uri-urn---do-you-know-the-differences)
 
 ## Communication protocols
 
